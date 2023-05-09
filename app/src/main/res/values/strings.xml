@@ -1,0 +1,81 @@
+<resources>
+    <string name="menu_rechercher">Rechercher</string>
+    <string name="menu_coter">Coter</string>
+    <string name="menu_panier">Panier</string>
+    <string name="menu_classement">Classement</string>
+    <string name="menu_tournois">Tournois </string>
+
+    <string name="app_name">SocielBet</string>
+    <!--page supérieur-->
+    <string name="nombre_betcoin">1743</string>
+
+<string name="nom_utilisateur">Jeanmarclebg</string>
+
+    <!--page Rechercher-->
+    <string name="page_rechercher_abonnement">Abonnement</string>
+    <string name="page_rechercher_decouvrir">Découvrir</string>
+
+    <!--page Rechercher page principale-->
+    <string name="nombre_betcoin_utilisateur_exterieur">1743</string>
+    <string name="page_rechercher_nom_utilisateur">Jeanmarclebg</string>
+    <string name="page_rechercher_nom_du_match">Real Madrid-Liverpool</string>
+    <string name="page_rechercher_desciption_match">Football,Ligue des champions-07/10/2022,20h45</string>
+    <string name="page_rechercher_bouton1">
+        REAL MADRID
+   </string>
+    <string name="page_rechercher_bouton_nombre1">
+        1.7
+   </string>
+    <string name="page_rechercher_bouton2">
+        NUL
+   </string>
+<string name="page_rechercher_bouton_nombre2">
+        3.4
+   </string>
+
+    <string name="page_rechercher_bouton3">
+        LIVERPOOL
+   </string>
+    <string name="page_rechercher_bouton_nombre3">
+       2.3
+   </string>
+
+    <string name="page_rechercher_nombre_de_like">21 jaime</string>
+    <string name="page_rechercher_desciption">Le réal qui crack a domicile jsp.... Abonne toi je met les plus belles cotes</string>
+    <string name="page_rechercher_commentaire">Voir les 7 commentaires</string>
+    <string name="page_rechercher_date_mise_en_ligne">Mise en ligne le: 07/10/2022</string>
+    <!--page coter -->
+    <string name="page_coter_nom_du_match">Real Madrid-Liverpool</string>
+    <string name="page_coter_desciption_match">Football,Ligue des champions-07/10/2022,20h45</string>
+    <string name="nombre_betcoin_utilisateur">1743</string>
+    <string name="page_coter_bouton1">
+        REAL MADRID
+   </string>
+    <string name="page_coter_bouton_nombre1">
+        1.7
+   </string>
+    <string name="page_coter_bouton2">
+        NUL
+   </string>
+    <string name="page_coter_bouton_nombre2">
+        3.4
+   </string>
+
+    <string name="page_coter_bouton3">
+        LIVERPOOL
+   </string>
+    <string name="page_coter_bouton_nombre3">
+       2.3
+   </string>
+    <string name="page_coter_message_d_aide">
+        Qui a le plus de chance de gagner selon vous ?
+    </string>
+    <string name="page_coter_ajoutez_une_description"
+        >
+        Ajoutez une description...
+    </string>
+    <string name="page_coter_resultat_aide_nbr1">1.6</string>
+    <string name="page_coter_resultat_aide_nbr2">3</string>
+    <string name="page_coter_resultat_aide_nbr3">2.5</string>
+    <string name="page_coter_valider_la_cote">Valider la cote</string>
+</resources>

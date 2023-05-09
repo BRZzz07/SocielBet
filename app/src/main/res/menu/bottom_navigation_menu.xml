@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/rechercher_menu"
+        android:title="@string/menu_rechercher"
+        android:icon="@drawable/ic_rechercher" />
+
+    <item
+        android:id="@+id/coter_menu"
+        android:title="@string/menu_coter"
+        android:icon="@drawable/ic_coter" />
+
+    <item
+        android:id="@+id/panier_menu"
+        android:title="@string/menu_panier"
+        android:icon="@drawable/ic_panier"
+
+        />
+
+    <item
+        android:id="@+id/classement_menu"
+        android:title="@string/menu_classement"
+        android:icon="@drawable/ic_classement" />
+
+    <item
+        android:id="@+id/tournois_menu"
+        android:title="@string/menu_tournois"
+        android:icon="@drawable/ic_tournois" />
+</menu>

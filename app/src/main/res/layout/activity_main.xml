@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+
+
+    <!--fond-->
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:background="@color/gris"
+        tools:layout_editor_absoluteY="110dp" />
+
+    <!--barres jaunes-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/jaune"
+            android:layout_marginRight="7dp"
+            />
+    </LinearLayout>
+
+    <!--barres jaunes-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <View
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/jaune"
+            android:layout_marginLeft="7dp"/>
+    </LinearLayout>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--bande noir en haut-->
+        <View
+            android:id="@+id/view9"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.15"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1" />
+
+
+    <!--block avec abonnement decouvrir et le trait du millieu-->
+
+
+        <View
+            android:id="@+id/view13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+android:layout_marginTop="60dp"
+            android:background="@color/jaune"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.012"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.004" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:fontFamily="@font/segoe_ui_bold"
+            android:text="@string/page_rechercher_decouvrir"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="15dp"
+            app:layout_constraintBottom_toTopOf="@+id/view4"
+            app:layout_constraintHeight_percent="0.03"
+            app:layout_constraintStart_toEndOf="@+id/view13"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/segoe_ui"
+            android:text="@string/page_rechercher_abonnement"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view9"
+
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toStartOf="@+id/view13"
+            app:layout_constraintHeight_percent="0.03"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.2" />
+
+
+
+
+
+
+
+
+
+
+    <!--petit trait gris haut-->
+    <View
+        android:id="@+id/view4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gris2"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintHeight_percent="0.002"
+        app:layout_constraintWidth_percent="1"/>
+
+
+
+
+
+
+
+
+
+
+    <!--logo rechercher-->
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_rechercher"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:tint="@color/white" />
+
+
+
+
+
+
+
+    <!--LOGO toro-->
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/toro"
+            app:layout_constraintBottom_toTopOf="@+id/view13"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHeight_percent="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.06" />
+
+
+
+    <!--betcoin-->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/nombre_betcoin_fond"
+            android:fontFamily="@font/segoe_ui_bold_italic"
+            android:padding="5dp"
+            android:paddingEnd="10dp"
+            android:text="@string/nombre_betcoin"
+android:layout_marginRight="20dp"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:gravity="end"
+            app:layout_constraintBottom_toTopOf="@+id/view13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.035"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.17" />
+
+        <ImageView
+
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingLeft="5dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/logobetcoin"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+
+android:paddingTop="5dp"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toTopOf="@+id/textView2"
+            app:layout_constraintWidth_percent="0.05" />
+
+
+
+    <!--Profil-->
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="20dp"
+
+            android:src="@drawable/profil"
+            app:layout_constraintBottom_toTopOf="@+id/view13"
+            app:layout_constraintHeight_percent="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.06" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--scroll-->
+
+    <FrameLayout
+        android:id="@+id/containerscroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/black"
+android:layout_marginTop="130dp"
+        android:layout_marginBottom="82dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view8"
+        app:layout_constraintWidth_percent="0.97"
+
+        app:layout_constraintHeight_percent="0.75">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="25dp"
+
+                android:text="@string/page_rechercher_nom_utilisateur"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView9"
+                app:layout_constraintHeight_percent="0.04"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.5" />
+
+
+            <!--image jean marc-->
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/jeanmarc"
+                app:layout_constraintBottom_toTopOf="@+id/imageView9"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/ajouter_fond"
+                android:src="@drawable/ic_ajouter"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintEnd_toEndOf="@+id/imageView5"
+                app:layout_constraintHeight_percent="0.02"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.027" />
+
+            <View
+                android:id="@+id/view10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/nombre_betcoin_fond2"
+                android:text="@string/nombre_betcoin_utilisateur_exterieur"
+                android:textColor="@color/white"
+
+                android:textSize="13dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.05"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="3dp"
+                android:gravity="end"
+                android:paddingRight="10dp"
+                android:text="@string/nombre_betcoin_utilisateur_exterieur"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view10"
+                app:layout_constraintEnd_toEndOf="@+id/view10"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintTop_toTopOf="@+id/view10"
+                app:layout_constraintWidth_percent="0.2" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/logobetcoin"
+                app:layout_constraintBottom_toBottomOf="@+id/view10"
+
+
+                app:layout_constraintHeight_percent="0.04"
+
+                app:layout_constraintStart_toStartOf="@+id/view10"
+                app:layout_constraintTop_toTopOf="@+id/view10"
+                app:layout_constraintWidth_percent="0.04" />
+            <!--image central-->
+
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="top"
+                android:layout_marginTop="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stade"
+                app:layout_constraintHeight_percent="0.35"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                app:layout_constraintWidth_percent="1" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/segoe_ui"
+
+                android:text="@string/page_rechercher_nom_du_match"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                app:layout_constraintHeight_percent="0.05"
+                app:layout_constraintStart_toStartOf="@id/imageView9"
+                app:layout_constraintTop_toBottomOf="@id/imageView9"
+
+                app:layout_constraintWidth_percent="1" />
+
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_favoris"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                app:layout_constraintHeight_percent="0.07"
+                app:layout_constraintTop_toTopOf="@+id/textView3"
+                app:layout_constraintWidth_percent="0.07" />
+
+            <!--TROIS bouton jaunes-->
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/page_rechercher_desciption_match"
+                android:textColor="@color/white"
+
+                android:textSize="11dp"
+                app:layout_constraintHeight_percent="0.05"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintWidth_percent="1" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/jaune"
+                app:layout_constraintHeight_percent="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintWidth_percent="0.28" />
+
+            <TextView
+
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:gravity="center"
+                android:text="@string/page_rechercher_bouton1"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintStart_toStartOf="@+id/view"
+                app:layout_constraintTop_toTopOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:gravity="center"
+                android:text="@string/page_rechercher_bouton_nombre1"
+                android:textColor="@color/black"
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toEndOf="@+id/view"
+                app:layout_constraintHeight_percent="0.055"
+                app:layout_constraintStart_toStartOf="@+id/view" />
+
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/jaune"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView6"
+                app:layout_constraintWidth_percent="0.28" />
+
+            <TextView
+
+                android:id="@+id/textView9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:gravity="center"
+                android:text="@string/page_rechercher_bouton2"
+                android:textColor="@color/black"
+
+                android:textSize="11dp"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintStart_toStartOf="@+id/view2"
+                app:layout_constraintTop_toTopOf="@+id/view2" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:gravity="center"
+                android:text="@string/page_rechercher_bouton_nombre2"
+
+                android:textColor="@color/black"
+
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view2"
+                app:layout_constraintEnd_toEndOf="@+id/view2"
+                app:layout_constraintHeight_percent="0.055"
+                app:layout_constraintStart_toStartOf="@+id/view2" />
+
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/jaune"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.09"
+                app:layout_constraintTop_toTopOf="@+id/view2"
+                app:layout_constraintWidth_percent="0.28" />
+
+            <TextView
+
+                android:id="@+id/textView13"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/segoe_ui_bold"
+
+                android:gravity="center"
+                android:text="@string/page_rechercher_bouton3"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                app:layout_constraintEnd_toEndOf="@+id/view6"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintStart_toStartOf="@+id/view6"
+                app:layout_constraintTop_toTopOf="@+id/view6" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:fontFamily="@font/segoe_ui_bold"
+                android:gravity="center"
+                android:text="@string/page_rechercher_bouton_nombre3"
+
+                android:textColor="@color/black"
+
+                android:textSize="17dp"
+                app:layout_constraintBottom_toBottomOf="@+id/view6"
+                app:layout_constraintEnd_toEndOf="@+id/view6"
+                app:layout_constraintHeight_percent="0.055"
+                app:layout_constraintStart_toStartOf="@+id/view6" />
+
+            <!--like partage commentaire-->
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/ic_commenter"
+                app:layout_constraintHeight_percent="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintWidth_percent="0.055" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="13dp"
+                android:src="@drawable/ic_aimer"
+                app:layout_constraintHeight_percent="0.06"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintWidth_percent="0.06" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="14dp"
+                android:src="@drawable/ic_partager"
+                app:layout_constraintHeight_percent="0.055"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view"
+                app:layout_constraintWidth_percent="0.055" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/jaune"
+                app:layout_constraintHeight_percent="0.003"
+                app:layout_constraintStart_toEndOf="@+id/imageView8"
+                app:layout_constraintTop_toBottomOf="@+id/view2"
+                app:layout_constraintWidth_percent="0.22" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="28dp"
+                android:background="@color/jaune"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.003"
+                app:layout_constraintStart_toEndOf="@+id/textView14"
+                app:layout_constraintTop_toBottomOf="@+id/view6"
+                app:layout_constraintWidth_percent="0.1" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/segoe_ui"
+                android:text="@string/page_rechercher_nombre_de_like"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                app:layout_constraintHeight_percent="0.03"
+                app:layout_constraintStart_toEndOf="@+id/view7"
+                app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/page_rechercher_desciption"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.075"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view7" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/page_rechercher_commentaire"
+                android:textColor="@color/gris3"
+                android:textSize="13dp"
+                app:layout_constraintHeight_percent="0.09"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <View
+                android:id="@+id/view11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@color/jaune"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView"
+                app:layout_constraintHeight_percent="0.003"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:layout_constraintWidth_percent="0.24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/segoe_ui_italic"
+                android:text="@string/page_rechercher_date_mise_en_ligne"
+                android:textColor="@color/white"
+                android:textSize="11dp"
+
+
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+            <View
+
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+
+                android:background="@color/jaune"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.003"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView15"
+                app:layout_constraintWidth_percent="0.24" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:itemIconSize="20dp"
+        app:itemIconTint="@drawable/bottom_nav_color"
+        app:itemTextColor="@drawable/bottom_nav_color"
+
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="@+id/view8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="1"
+        app:menu="@menu/bottom_navigation_menu"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        app:itemTextAppearanceActive="@style/MyBottomNavTextAppearance"
+        app:itemTextAppearanceInactive="@style/MyBottomNavTextAppearance"/>
+
+    <!--petit trait gris bas-->
+    <View
+        android:id="@+id/view5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/gris2"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.002"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_percent="1"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
